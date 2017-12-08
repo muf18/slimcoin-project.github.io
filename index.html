@@ -1,17 +1,168 @@
----
-layout: default
-ref: index
-lang: en
-menuitem: Home
-priority: 1
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <div class="image-container">
-    <img class="start-image" src="/slimcoin-startimage.jpg" alt="Slimcoin, community oriented cryptocurrency." />
+    <!-- Standard Meta -->
 
-  </div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Slimco.in</title>
 
-  <p class=""><b>Slimcoin</b> is an innovative blockchain project, cryptocurrency and payment solution. Its novel <em>Proof of Burn</em> technology is designed for <em>real decentralization</em> and <em>stability</em>. Energy-efficient and secure, Slimcoin provides low transaction fees and advanced features like distributed web publishing. <a href="/about/">Learn more ...</a></p>
-</div>
+    <link rel="stylesheet" type="text/css" href="./css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="./css/homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+
+    <script src="./js/jq.js"></script>
+    <script src="./js/semantic.min.js.pobrany plik"></script>
+    <script src="./js/homepage.min.js.pobrany plik"></script>
+</head>
+<body>
+
+    <div class="ui inverted page grid masthead segment mast-segment mast-gradient">
+        <div class="column">
+            <div class="inverted secondary pointing ui menu">
+                <div class="header item">Slimcoin</div>
+                <div class="right menu">
+                    <div class="ui top right pointing mobile dropdown link item">
+                        Menu
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="http://www.slimcoin.club/#tech" target="_parent">Technology</a>
+
+                            <a class="item" href="https://bchain.info/SLM/" target="_parent">Block Explorer</a>
+                        </div>
+                    </div>
+                    <div class="ui dropdown link item">
+                        Technology
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" target="_blank" href="https://github.com/slimcoin-project/slimcoin-project.github.io/blob/master/whitepaperSLM.pdf">White Paper</a>
+                            <a class="item" href="https://slimcoin.org/index.php/en/resources-en/proof-of-burn">Proof-of-Burn</a>
+                            <a class="item" href="https://slimcoin.org/index.php/en/resources-en/dcrypt">Proof-of-Work: Dcrypt</a>
+                        </div>
+                    </div>
+
+                    <div class="ui dropdown link item">
+                        Block Explorer
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="https://bchain.info/SLM/">BChain.Info</a>
+                            <a class="item" href="http://tessier.bel-epa.com:5064">ACME - A Cryptocurrency Metadata Explorer</a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="ui dropdown link item">
+                        Downloads
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="https://minkiz.co/noodlings/slm/slimcoin-qt-v0.5.1-win32.zip">Simcoin-QT 0.5.1 (Windows)</a>
+                            <a class="item" href="https://drive.google.com/drive/folders/1IDaf4BD2SL0_RJxdp0CZNU7-4aR0EL5x">Simcoin-QT 0.5 (ARM V5/V7)</a>
+
+                            <a class="item" href="https://web.archive.org/web/20171122230259/https://mega.co.nz/#!pg8lEJoL!54dSH7LrpmOJiMzNS72MDCYvZtXwqnHGyCApmYIpxkA" target="_parent">SLM Blockchain Snapshot 236000</a>
+                            <a class="item" href="https://web.archive.org/web/20171122230259/https://mega.co.nz/#!ekQyAZBS!YNYsEYOVVWbOv-CUza5LlSO0iOiVxykThw1dQk_ChfA" target="_parent">SLM Blockchain Snapshot 126100</a>
+                        </div>
+                    </div>
+                    <a class="item" href="https://web.archive.org/web/20171122230259/http://www.slimcoin.club/#donate" target="_parent">Donate</a>
+                    <a class="item" href="https://web.archive.org/web/20171122230259/https://bitcointalk.org/index.php?topic=1141676.0">Discussion Thread</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui primary page grid overview segment">
+    	<div class="ui row">
+    		<div class="ui eight wide column">
+    			<button class="fluid ui teal large button">Download Wallet</button>
+    		</div>
+    		<div class="ui eight wide column">
+    			<button class="fluid ui green large button">Wallet on Github</button>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="ui inverted page grid overview segment">
+        <div class="ui inverted grid segment">
+            <div class="row">
+                <div class="wide column">
+                    <h1 class="center aligned ui header">
+       Donations
+      </h1>
+                    <div class="ui horizontal divider"><i class="dollar icon inverted"></i></div>
+                </div>
+            </div>
+
+            <div class="ui inverted grid segment">
+                <div class="ui one wide column"></div>
+                <div class="fourteen wide column">
+                    <div class="ui two column center aligned stackable divided grid">
+                        <div class="column">
+                            <h2 class="center aligned ui header"> Bounties </h2>
+                            <a class="ui teal label" style="text-transform:none">
+        ShBfaKcRQhRGxnJtSmyxcGbeopGwWCk4fH
+       </a>
+                            <a class="ui red label" id="donate_bounty_value">
+        0 SLM
+       </a>
+                            <p>SLMs received with this address will be used for rewarding feature developers. Amount in Red is the current amount in the address.</p>
+                        </div>
+                        <div class="column">
+                            <h2 class="center aligned ui header"> Giveaways </h2>
+                            <a class="ui teal label" style="text-transform:none">
+        Saa2qzQMKvK8uaiztmrr56EEw26TFXmGPC
+       </a>
+                            <a class="ui red label" id="donate_giveaway_value">
+        0 SLM
+       </a>
+                            <p>SLMs received with this address will be used for awareness raising via giveaways and faucets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui inverted teal page grid segment">
+        <div class="ten wide column">
+            <div class="ui three column stackable grid">
+                <div class="column">
+                    <div class="ui header">Site Details</div>
+                    <div class="ui inverted link list">
+
+                        <a class="item" href="https://bchain.info/SLM/" target="_parent">Block Explorer</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui header">Technology</div>
+                    <div class="ui inverted link list">
+
+                        <a class="item" href="https://slimcoin.org/index.php/en/resources-en/proof-of-burn">Proof-of-Burn</a>
+                        <a class="item" href="https://slimcoin.org/index.php/en/resources-en/dcrypt">Proof-of-Work: Dcrypt</a>
+                        <a class="item" href="https://github.com/slimcoin-project/slimcoin-project.github.io/blob/master/whitepaperSLM.pdf">White Paper</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui header">Community</div>
+                    <div class="ui inverted link list">
+                        <a class="item" href="https://bitcointalk.org/index.php?topic=1141676.0">Bitcointalk</a>
+                        <a class="item" href="https://github.com/slimcoin-project">Github</a>
+                        <a class="item" href="https://twitter.com/Slimcoin_club">#slimcoin_club @ Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="six wide right floated aligned column">
+            <h3 class="ui header">Contact Us</h3>
+            <addr>
+                Page developed by
+                <br>Kryptos Lab (thanks for it, but it had gone offline modded by muf18)
+            </addr>
+            <p>placeholder@placeholder.com</p>
+        </div>
+    </div>
+
+    </body>
+
+</html>
